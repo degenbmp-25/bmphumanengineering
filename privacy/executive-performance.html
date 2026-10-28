@@ -95,7 +95,7 @@
 <p>This plugin provides general performance coaching. It does not provide medical advice, diagnosis, or treatment, and it is not a substitute for a licensed clinician or a registered dietitian. Users with medical conditions, medication, injury recovery needs, pregnancy, or a history of disordered eating are directed to appropriate professionals, and the plugin does not generate programs for them.</p>
 
 <h2>9. Security</h2>
-<p>Data is transmitted over TLS. The MCP server is read-only with respect to your assessment answers, enforces authorization on every request, validates all input against a strict schema, and rejects restricted data categories at the boundary.</p>
+<p>Data is transmitted over TLS. The MCP server is read-only with respect to your assessment answers, validates all input against a strict schema, and rejects restricted data categories at the boundary. Request authorization is enforced at the server edge; the identity of the caller is pseudonymous and the auth token is hashed, never stored raw.</p>
 
 <h2>10. Changes</h2>
 <p>Material changes to this policy will be published here with an updated effective date. Continuing to use the plugin after a change means you accept the updated policy.</p>
